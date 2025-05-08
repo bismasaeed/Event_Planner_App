@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1024553504633",
+    "project_id": "event-planner-app-48f52",
+    "storage_bucket": "event-planner-app-48f52.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1024553504633:android:fe73375ce616c2ab7429a8",
+        "android_client_info": {
+          "package_name": "com.example.event_planner_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1024553504633-jak02j0g9899jko0glshvnq8p9tabh5d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.event_planner_app",
+            "certificate_hash": "2c07eef98582620243dbcec72391b3adc27c59a0"
+          }
+        },
+        {
+          "client_id": "1024553504633-n2fq2orftktio8k21e3561fnuiadql1p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVF3GKrdWd1NqSjInzOfZW7ECnMirXUKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1024553504633-n2fq2orftktio8k21e3561fnuiadql1p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

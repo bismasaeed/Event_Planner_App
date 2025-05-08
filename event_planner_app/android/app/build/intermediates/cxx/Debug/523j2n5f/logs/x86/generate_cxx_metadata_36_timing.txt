@@ -1,0 +1,21 @@
+# C/C++ build system timings
+generate_cxx_metadata
+  [gap of 861ms]
+  create-invalidation-state 639ms
+  execute-generate-process
+    [gap of 316ms]
+    exec-configure 242714ms
+    [gap of 2059ms]
+  execute-generate-process completed in 245089ms
+  [gap of 4284ms]
+  write-metadata-json-to-file 913ms
+generate_cxx_metadata completed in 251957ms
+
+# C/C++ build system timings
+generate_cxx_metadata
+  [gap of 780ms]
+  create-invalidation-state 1262ms
+  [gap of 131ms]
+  write-metadata-json-to-file 123ms
+generate_cxx_metadata completed in 2296ms
+

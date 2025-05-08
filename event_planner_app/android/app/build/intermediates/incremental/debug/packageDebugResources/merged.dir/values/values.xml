@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">1024553504633-n2fq2orftktio8k21e3561fnuiadql1p.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">1024553504633</string>
+    <string name="google_api_key" translatable="false">AIzaSyAVF3GKrdWd1NqSjInzOfZW7ECnMirXUKM</string>
+    <string name="google_app_id" translatable="false">1:1024553504633:android:fe73375ce616c2ab7429a8</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAVF3GKrdWd1NqSjInzOfZW7ECnMirXUKM</string>
+    <string name="google_storage_bucket" translatable="false">event-planner-app-48f52.firebasestorage.app</string>
+    <string name="project_id" translatable="false">event-planner-app-48f52</string>
+    <style name="LaunchTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        
+        <item name="android:windowBackground">@drawable/launch_background</item>
+    </style>
+    <style name="NormalTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">?android:colorBackground</item>
+    </style>
+</resources>
