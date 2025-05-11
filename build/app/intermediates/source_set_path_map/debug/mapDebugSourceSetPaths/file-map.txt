@@ -1,0 +1,43 @@
+com.example.event_app-jetified-core-ktx-1.13.1-0 C:\Users\ZA\.gradle\caches\8.10.2\transforms\059587434e082af64c0f4096814c4e9a\transformed\jetified-core-ktx-1.13.1\res
+com.example.event_app-jetified-activity-1.9.3-1 C:\Users\ZA\.gradle\caches\8.10.2\transforms\06dac08eaf559d9c9912fc7d01f316cb\transformed\jetified-activity-1.9.3\res
+com.example.event_app-fragment-1.7.1-2 C:\Users\ZA\.gradle\caches\8.10.2\transforms\2288a93ec4c0bd89246632c82e4f087d\transformed\fragment-1.7.1\res
+com.example.event_app-jetified-play-services-auth-21.0.0-3 C:\Users\ZA\.gradle\caches\8.10.2\transforms\255c508b67fdbaa8008253052acae1c7\transformed\jetified-play-services-auth-21.0.0\res
+com.example.event_app-jetified-window-java-1.2.0-4 C:\Users\ZA\.gradle\caches\8.10.2\transforms\25652c3d9b093e5c5aa9a56e32506627\transformed\jetified-window-java-1.2.0\res
+com.example.event_app-lifecycle-livedata-core-2.7.0-5 C:\Users\ZA\.gradle\caches\8.10.2\transforms\2faf304d423e7dfe3db7807fe8a214e0\transformed\lifecycle-livedata-core-2.7.0\res
+com.example.event_app-jetified-play-services-basement-18.5.0-6 C:\Users\ZA\.gradle\caches\8.10.2\transforms\394e66bd8510157464dddb04dc5c644e\transformed\jetified-play-services-basement-18.5.0\res
+com.example.event_app-jetified-tracing-1.2.0-7 C:\Users\ZA\.gradle\caches\8.10.2\transforms\494ac3096d3c73f2bde1663905e8d27d\transformed\jetified-tracing-1.2.0\res
+com.example.event_app-jetified-credentials-1.2.0-rc01-8 C:\Users\ZA\.gradle\caches\8.10.2\transforms\538bffd1d3338da9545e717cee8aebe6\transformed\jetified-credentials-1.2.0-rc01\res
+com.example.event_app-jetified-lifecycle-process-2.7.0-9 C:\Users\ZA\.gradle\caches\8.10.2\transforms\5e5503332a5cc7b8e51c9a536f370886\transformed\jetified-lifecycle-process-2.7.0\res
+com.example.event_app-jetified-annotation-experimental-1.4.0-10 C:\Users\ZA\.gradle\caches\8.10.2\transforms\60fe0f3f18c6ec09cb57c26767417d0f\transformed\jetified-annotation-experimental-1.4.0\res
+com.example.event_app-browser-1.4.0-11 C:\Users\ZA\.gradle\caches\8.10.2\transforms\7b033440aa470a99be9a63bdfe1fcc39\transformed\browser-1.4.0\res
+com.example.event_app-jetified-core-1.0.0-12 C:\Users\ZA\.gradle\caches\8.10.2\transforms\7b3c765ddae15a4d28d3f0cde2b8e270\transformed\jetified-core-1.0.0\res
+com.example.event_app-jetified-savedstate-1.2.1-13 C:\Users\ZA\.gradle\caches\8.10.2\transforms\860fa52c89ceaefd1e9870fb44d83658\transformed\jetified-savedstate-1.2.1\res
+com.example.event_app-jetified-firebase-common-21.0.0-14 C:\Users\ZA\.gradle\caches\8.10.2\transforms\8bd0d7190a8968496951b952504d2c00\transformed\jetified-firebase-common-21.0.0\res
+com.example.event_app-jetified-ads-adservices-1.1.0-beta11-15 C:\Users\ZA\.gradle\caches\8.10.2\transforms\91a285375c1adace703f5695f2794107\transformed\jetified-ads-adservices-1.1.0-beta11\res
+com.example.event_app-jetified-credentials-play-services-auth-1.2.0-rc01-16 C:\Users\ZA\.gradle\caches\8.10.2\transforms\943dbec7b2090b4e0b778fb01a3d0865\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\res
+com.example.event_app-core-runtime-2.2.0-17 C:\Users\ZA\.gradle\caches\8.10.2\transforms\95b74ac2ceb0a060b40f1043d03084d4\transformed\core-runtime-2.2.0\res
+com.example.event_app-jetified-lifecycle-viewmodel-savedstate-2.7.0-18 C:\Users\ZA\.gradle\caches\8.10.2\transforms\ab75ebaf9b123699cfaac44b81e0bcee\transformed\jetified-lifecycle-viewmodel-savedstate-2.7.0\res
+com.example.event_app-jetified-startup-runtime-1.1.1-19 C:\Users\ZA\.gradle\caches\8.10.2\transforms\ac14e7f6eb1dfecf1445416a87b6b7c8\transformed\jetified-startup-runtime-1.1.1\res
+com.example.event_app-jetified-play-services-base-18.5.0-20 C:\Users\ZA\.gradle\caches\8.10.2\transforms\b09bca6e9032127b24a23557d06adfe6\transformed\jetified-play-services-base-18.5.0\res
+com.example.event_app-core-1.13.1-21 C:\Users\ZA\.gradle\caches\8.10.2\transforms\be1c6e3935689bc48d8ac107ca5c3cb8\transformed\core-1.13.1\res
+com.example.event_app-jetified-window-1.2.0-22 C:\Users\ZA\.gradle\caches\8.10.2\transforms\c4bb5ec0f15e85b1a73387434b9df0cc\transformed\jetified-window-1.2.0\res
+com.example.event_app-jetified-profileinstaller-1.3.1-23 C:\Users\ZA\.gradle\caches\8.10.2\transforms\c5ffe22c729dd2ac29d44845160c61f2\transformed\jetified-profileinstaller-1.3.1\res
+com.example.event_app-lifecycle-runtime-2.7.0-24 C:\Users\ZA\.gradle\caches\8.10.2\transforms\c664de21e7a5a833f99d1cad90490625\transformed\lifecycle-runtime-2.7.0\res
+com.example.event_app-lifecycle-viewmodel-2.7.0-25 C:\Users\ZA\.gradle\caches\8.10.2\transforms\e70e24f689009d496ebf363b98367088\transformed\lifecycle-viewmodel-2.7.0\res
+com.example.event_app-jetified-core-common-2.0.3-26 C:\Users\ZA\.gradle\caches\8.10.2\transforms\e87f42e44caaa633d6bb3f3f1d841014\transformed\jetified-core-common-2.0.3\res
+com.example.event_app-jetified-ads-adservices-java-1.1.0-beta11-27 C:\Users\ZA\.gradle\caches\8.10.2\transforms\f093d3f3a59646d458c16e9034da85eb\transformed\jetified-ads-adservices-java-1.1.0-beta11\res
+com.example.event_app-debug-28 C:\Users\ZA\Desktop\App development\event_app\android\app\src\debug\res
+com.example.event_app-main-29 C:\Users\ZA\Desktop\App development\event_app\android\app\src\main\res
+com.example.event_app-pngs-30 C:\Users\ZA\Desktop\App development\event_app\build\app\generated\res\pngs\debug
+com.example.event_app-res-31 C:\Users\ZA\Desktop\App development\event_app\build\app\generated\res\processDebugGoogleServices
+com.example.event_app-resValues-32 C:\Users\ZA\Desktop\App development\event_app\build\app\generated\res\resValues\debug
+com.example.event_app-packageDebugResources-33 C:\Users\ZA\Desktop\App development\event_app\build\app\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.event_app-packageDebugResources-34 C:\Users\ZA\Desktop\App development\event_app\build\app\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.event_app-debug-35 C:\Users\ZA\Desktop\App development\event_app\build\app\intermediates\merged_res\debug\mergeDebugResources
+com.example.event_app-debug-36 C:\Users\ZA\Desktop\App development\event_app\build\cloud_firestore\intermediates\packaged_res\debug\packageDebugResources
+com.example.event_app-debug-37 C:\Users\ZA\Desktop\App development\event_app\build\firebase_auth\intermediates\packaged_res\debug\packageDebugResources
+com.example.event_app-debug-38 C:\Users\ZA\Desktop\App development\event_app\build\firebase_core\intermediates\packaged_res\debug\packageDebugResources
+com.example.event_app-debug-39 C:\Users\ZA\Desktop\App development\event_app\build\firebase_storage\intermediates\packaged_res\debug\packageDebugResources
+com.example.event_app-debug-40 C:\Users\ZA\Desktop\App development\event_app\build\flutter_plugin_android_lifecycle\intermediates\packaged_res\debug\packageDebugResources
+com.example.event_app-debug-41 C:\Users\ZA\Desktop\App development\event_app\build\google_sign_in_android\intermediates\packaged_res\debug\packageDebugResources
+com.example.event_app-debug-42 C:\Users\ZA\Desktop\App development\event_app\build\image_picker_android\intermediates\packaged_res\debug\packageDebugResources

@@ -1,4 +1,0 @@
-Not searching for unused variables given on the command line.
--- The C compiler identification is Clang 18.0.3
--- The CXX compiler identification is Clang 18.0.3
--- Detecting C compiler ABI info
