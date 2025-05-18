@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 application
-INJECTED from C:\Users\ZA\Desktop\App development\event_app\android\app\src\main\AndroidManifest.xml:3:5-34:19
+INJECTED from C:\Users\ZA\Desktop\App development\event_app\android\app\src\main\AndroidManifest.xml:4:5-35:19
 INJECTED from C:\Users\ZA\Desktop\App development\event_app\android\app\src\debug\AndroidManifest.xml
 MERGED from [:cloud_firestore] C:\Users\ZA\Desktop\App development\event_app\build\cloud_firestore\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:7:5-13:19
 MERGED from [:cloud_firestore] C:\Users\ZA\Desktop\App development\event_app\build\cloud_firestore\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:7:5-13:19
@@ -85,8 +85,8 @@ MERGED from [com.google.android.play:core-common:2.0.3] C:\Users\ZA\.gradle\cach
 	android:name
 		INJECTED from C:\Users\ZA\Desktop\App development\event_app\android\app\src\main\AndroidManifest.xml
 manifest
-ADDED from C:\Users\ZA\Desktop\App development\event_app\android\app\src\main\AndroidManifest.xml:1:1-46:12
-MERGED from C:\Users\ZA\Desktop\App development\event_app\android\app\src\main\AndroidManifest.xml:1:1-46:12
+ADDED from C:\Users\ZA\Desktop\App development\event_app\android\app\src\main\AndroidManifest.xml:1:1-47:12
+MERGED from C:\Users\ZA\Desktop\App development\event_app\android\app\src\main\AndroidManifest.xml:1:1-47:12
 INJECTED from C:\Users\ZA\Desktop\App development\event_app\android\app\src\debug\AndroidManifest.xml:1:1-7:12
 INJECTED from C:\Users\ZA\Desktop\App development\event_app\android\app\src\debug\AndroidManifest.xml:1:1-7:12
 INJECTED from C:\Users\ZA\Desktop\App development\event_app\android\app\src\debug\AndroidManifest.xml:1:1-7:12
@@ -175,20 +175,10 @@ MERGED from [com.google.android.play:core-common:2.0.3] C:\Users\ZA\.gradle\cach
 		INJECTED from C:\Users\ZA\Desktop\App development\event_app\android\app\src\debug\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\ZA\Desktop\App development\event_app\android\app\src\main\AndroidManifest.xml:1:11-69
-queries
-ADDED from C:\Users\ZA\Desktop\App development\event_app\android\app\src\main\AndroidManifest.xml:40:5-45:15
-intent#action:name:android.intent.action.PROCESS_TEXT+data:mimeType:text/plain
-ADDED from C:\Users\ZA\Desktop\App development\event_app\android\app\src\main\AndroidManifest.xml:41:9-44:18
-action#android.intent.action.PROCESS_TEXT
-ADDED from C:\Users\ZA\Desktop\App development\event_app\android\app\src\main\AndroidManifest.xml:42:13-72
-	android:name
-		ADDED from C:\Users\ZA\Desktop\App development\event_app\android\app\src\main\AndroidManifest.xml:42:21-70
-data
-ADDED from C:\Users\ZA\Desktop\App development\event_app\android\app\src\main\AndroidManifest.xml:43:13-50
-	android:mimeType
-		ADDED from C:\Users\ZA\Desktop\App development\event_app\android\app\src\main\AndroidManifest.xml:43:19-48
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\ZA\Desktop\App development\event_app\android\app\src\debug\AndroidManifest.xml:6:5-66
+ADDED from C:\Users\ZA\Desktop\App development\event_app\android\app\src\main\AndroidManifest.xml:3:5-66
+MERGED from C:\Users\ZA\Desktop\App development\event_app\android\app\src\main\AndroidManifest.xml:3:5-66
+MERGED from C:\Users\ZA\Desktop\App development\event_app\android\app\src\main\AndroidManifest.xml:3:5-66
 MERGED from [com.google.firebase:firebase-firestore:25.1.4] C:\Users\ZA\.gradle\caches\8.10.2\transforms\5ad4ed282fcd2b9d3ee5a9743fd3e494\transformed\jetified-firebase-firestore-25.1.4\AndroidManifest.xml:11:5-67
 MERGED from [com.google.firebase:firebase-firestore:25.1.4] C:\Users\ZA\.gradle\caches\8.10.2\transforms\5ad4ed282fcd2b9d3ee5a9743fd3e494\transformed\jetified-firebase-firestore-25.1.4\AndroidManifest.xml:11:5-67
 MERGED from [com.google.firebase:firebase-auth:23.2.0] C:\Users\ZA\.gradle\caches\8.10.2\transforms\f58417880dcc2ffa94cdbb17189d3341\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:25:5-67
@@ -210,7 +200,19 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:22.4.0] C:\Us
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:22.4.0] C:\Users\ZA\.gradle\caches\8.10.2\transforms\e9c2169d5eaa2fda2d633b9bee1ce588\transformed\jetified-play-services-measurement-sdk-api-22.4.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:22.4.0] C:\Users\ZA\.gradle\caches\8.10.2\transforms\e9c2169d5eaa2fda2d633b9bee1ce588\transformed\jetified-play-services-measurement-sdk-api-22.4.0\AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from C:\Users\ZA\Desktop\App development\event_app\android\app\src\debug\AndroidManifest.xml:6:22-64
+		ADDED from C:\Users\ZA\Desktop\App development\event_app\android\app\src\main\AndroidManifest.xml:3:22-64
+queries
+ADDED from C:\Users\ZA\Desktop\App development\event_app\android\app\src\main\AndroidManifest.xml:41:5-46:15
+intent#action:name:android.intent.action.PROCESS_TEXT+data:mimeType:text/plain
+ADDED from C:\Users\ZA\Desktop\App development\event_app\android\app\src\main\AndroidManifest.xml:42:9-45:18
+action#android.intent.action.PROCESS_TEXT
+ADDED from C:\Users\ZA\Desktop\App development\event_app\android\app\src\main\AndroidManifest.xml:43:13-72
+	android:name
+		ADDED from C:\Users\ZA\Desktop\App development\event_app\android\app\src\main\AndroidManifest.xml:43:21-70
+data
+ADDED from C:\Users\ZA\Desktop\App development\event_app\android\app\src\main\AndroidManifest.xml:44:13-50
+	android:mimeType
+		ADDED from C:\Users\ZA\Desktop\App development\event_app\android\app\src\main\AndroidManifest.xml:44:19-48
 uses-sdk
 INJECTED from C:\Users\ZA\Desktop\App development\event_app\android\app\src\debug\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\ZA\Desktop\App development\event_app\android\app\src\debug\AndroidManifest.xml

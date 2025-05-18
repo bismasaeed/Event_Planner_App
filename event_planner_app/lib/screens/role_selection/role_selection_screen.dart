@@ -8,6 +8,7 @@ import '../organizer/organizer_dashboard_screen.dart';
 class RoleSelectionScreen extends StatelessWidget {
   const RoleSelectionScreen({Key? key}) : super(key: key);
 
+  // Method to navigate to the respective dashboard based on selected role
   void _navigateToDashboard(BuildContext context, String role) {
     final user = (context.read<AuthBloc>().state as Authenticated).user;
 
@@ -26,11 +27,12 @@ class RoleSelectionScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Retrieve the currently authenticated user
     final user = (context.read<AuthBloc>().state as Authenticated).user;
 
     return Scaffold(
       appBar: AppBar(
-        automaticallyImplyLeading: false,
+        automaticallyImplyLeading: false, // Hides default back button
         title: const Text(
           'Role Selection',
           style: TextStyle(
@@ -39,7 +41,7 @@ class RoleSelectionScreen extends StatelessWidget {
           ),
         ),
         centerTitle: true,
-        backgroundColor: Colors.deepPurple, // Or use Theme.of(context).colorScheme.primary
+        backgroundColor: Colors.deepPurple,
       ),
 
       body: Container(
@@ -57,6 +59,7 @@ class RoleSelectionScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              // Greeting message with user name
               Text(
                 'Welcome, ${user.displayName}',
                 style: const TextStyle(
@@ -67,6 +70,8 @@ class RoleSelectionScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 20),
+
+              // Role selection instruction
               const Text(
                 'Please select the role you are willing to continue with:',
                 style: TextStyle(fontSize: 18),
@@ -74,7 +79,7 @@ class RoleSelectionScreen extends StatelessWidget {
               ),
               const SizedBox(height: 50),
 
-              // Vendor Button
+              // Vendor role selection button
               Card(
                 elevation: 6,
                 shape: RoundedRectangleBorder(
@@ -94,7 +99,7 @@ class RoleSelectionScreen extends StatelessWidget {
               ),
               const SizedBox(height: 30),
 
-              // Organizer Button
+              // Organizer role selection button
               Card(
                 elevation: 6,
                 shape: RoundedRectangleBorder(
@@ -114,6 +119,7 @@ class RoleSelectionScreen extends StatelessWidget {
               ),
               const SizedBox(height: 40),
 
+              // Informative footer
               const Text(
                 'You can always switch roles from your profile.',
                 style: TextStyle(fontSize: 14, color: Colors.grey),
@@ -123,7 +129,6 @@ class RoleSelectionScreen extends StatelessWidget {
           ),
         ),
       ),
-
     );
   }
 }

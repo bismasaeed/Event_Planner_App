@@ -114,7 +114,18 @@ class _VendorDetailScreenState extends State<VendorDetailScreen> {
   @override
   Widget build(BuildContext context) {
     final imageUrl = widget.postData['image_url'];
-    final name = widget.postData['venue_name'] ?? widget.postData['business_name'] ?? 'Vendor Detail';
+   // final name = widget.postData['venue_name'] ?? widget.postData['business_name'] ?? 'Vendor Detail';
+
+
+    final String? venueName = widget.postData['venue_name'];
+    final String? businessName = widget.postData['business_name'];
+
+    final name = (businessName != null && businessName.isNotEmpty)
+        ? businessName
+        : (venueName != null && venueName.isNotEmpty)
+        ? venueName
+        : 'Vendor Detail';
+
 
     return Scaffold(
       appBar: AppBar(title: Text(name)),

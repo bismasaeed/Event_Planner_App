@@ -60,3 +60,11 @@ class AddVendorPostEvent extends VendorEvent {
 
   AddVendorPostEvent(this.vendor);
 }
+
+class UpdateVendorPostEvent extends VendorEvent {
+  final String vendorId;
+  final Map<String, dynamic> updatedData;
+
+  UpdateVendorPostEvent({required this.vendorId, required this.updatedData});
+}
+

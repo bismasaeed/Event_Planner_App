@@ -16,6 +16,8 @@ class VendorListingDetailPage extends StatelessWidget {
     required this.postData,
   });
 
+
+
   Widget _buildDetailRow(IconData icon, String text) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 6.0),
@@ -38,7 +40,17 @@ class VendorListingDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final imageUrl = postData['image_url'];
-    final name = postData['venue_name'] ?? postData['business_name'] ?? 'Vendor Detail';
+   // final name = postData['venue_name'] ?? postData['business_name'] ?? 'Vendor Detail';
+
+    final String? venueName = postData['venue_name'];
+    final String? businessName = postData['business_name'];
+
+    final name = (businessName != null && businessName.isNotEmpty)
+        ? businessName
+        : (venueName != null && venueName.isNotEmpty)
+        ? venueName
+        : 'Vendor Detail';
+
 
     return Scaffold(
       appBar: AppBar(title: Text(name)),

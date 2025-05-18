@@ -9,7 +9,9 @@ import '../auth/signup_screen.dart';
 import '../role_selection/role_selection_screen.dart';
 import 'organizer_booking_screen.dart';
 import 'search_organizer_page.dart';
-import '../../widgets/curved_bottom_nav.dart'; // <-- Import the custom bottom nav bar
+import '../../widgets/curved_bottom_nav.dart';
+import '../../services/quote_service.dart';
+import '../../models/quote_model.dart';
 
 class OrganizerDashboardScreen extends StatefulWidget {
   final CustomUser user;
@@ -21,7 +23,24 @@ class OrganizerDashboardScreen extends StatefulWidget {
 }
 
 class _OrganizerDashboardScreenState extends State<OrganizerDashboardScreen> {
+  Quote? quote;
+  bool isLoading = true;
+
   int _currentIndex = 1;
+
+  @override
+  void initState() {
+    super.initState();
+    loadQuote();
+  }
+
+  Future<void> loadQuote() async {
+    final fetchedQuote = await fetchQuote();
+    setState(() {
+      quote = fetchedQuote;
+      isLoading = false;
+    });
+  }
 
   void _logout() {
     context.read<AuthBloc>().add(LogoutRequested());
@@ -53,6 +72,9 @@ class _OrganizerDashboardScreenState extends State<OrganizerDashboardScreen> {
             ),
             textAlign: TextAlign.center,
           ),
+
+          const SizedBox(height: 10),
+
           const Text(
             '“Connecting dreams with reality — one event at a time.”',
             style: TextStyle(
@@ -62,6 +84,17 @@ class _OrganizerDashboardScreenState extends State<OrganizerDashboardScreen> {
             ),
             textAlign: TextAlign.center,
           ),
+
+          // Text(
+          //   '“${quote?.content ?? ''}”',
+          //   style: const TextStyle(
+          //     fontSize: 16,
+          //     fontStyle: FontStyle.italic,
+          //     color: Colors.deepPurpleAccent,
+          //   ),
+          //   textAlign: TextAlign.center,
+          // ),
+
           const SizedBox(height: 20),
           ClipRRect(
             borderRadius: BorderRadius.circular(20),
@@ -107,7 +140,7 @@ class _OrganizerDashboardScreenState extends State<OrganizerDashboardScreen> {
           ),
           const SizedBox(height: 16),
 
-          // 🔥 Firestore Stream of Vendors
+          //Firestore Stream of Vendors
           StreamBuilder<QuerySnapshot>(
             stream: FirebaseFirestore.instance.collection('vendors').snapshots(),
             builder: (context, snapshot) {

@@ -4,7 +4,7 @@ import 'package:firebase_core/firebase_core.dart';
 
 import 'blocs/auth_bloc/auth_bloc.dart';
 import 'repositories/auth_repository.dart';
-import 'repositories/vendor_repository.dart'; // <-- Import this
+import 'repositories/vendor_repository.dart';
 import 'screens/splash/splash_screen.dart';
 
 void main() async {

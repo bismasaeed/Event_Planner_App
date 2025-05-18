@@ -144,7 +144,7 @@ class _SearchOrganizerPageState extends State<SearchOrganizerPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // 🔍 Search Bar with Clear Button
+            // Search Bar with Clear Button
             TextField(
               controller: _searchController,
               decoration: InputDecoration(

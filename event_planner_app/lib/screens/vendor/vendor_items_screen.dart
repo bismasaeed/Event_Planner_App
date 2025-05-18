@@ -5,7 +5,9 @@ import 'package:event_app/blocs/vendor/vendor_event.dart';
 import 'package:event_app/blocs/vendor/vendor_state.dart';
 import 'package:event_app/models/vendor_model.dart';
 import 'package:event_app/repositories/vendor_repository.dart';
-import 'package:event_app/screens/vendor/vendor_listing_detail_page.dart'; // ✅ Add this import
+import 'package:event_app/screens/vendor/vendor_listing_detail_page.dart';
+
+import 'edit_vendor_form.dart'; // ✅ Add this import
 
 class VendorItemsScreen extends StatelessWidget {
   final String userId;
@@ -70,13 +72,36 @@ class VendorItemsScreen extends StatelessWidget {
                               fontWeight: FontWeight.w500,
                             ),
                           ),
-                          trailing: IconButton(
-                            icon: const Icon(Icons.delete),
-                            onPressed: () {
-                              _showDeleteDialog(context, post.id);
-                            },
+                          trailing: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                    IconButton(
+                    icon: const Icon(Icons.edit, color: Colors.blue),
+                    onPressed: () {
+                      final vendorBloc = BlocProvider.of<VendorBloc>(context);
+
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => BlocProvider.value(
+                            value: vendorBloc,
+                            child: VendorEditFormScreen(vendor: post),
                           ),
-                          onTap: () {
+                        ),
+                      );
+
+                    },
+                    ),
+                    IconButton(
+                    icon: const Icon(Icons.delete, color: Colors.red),
+                    onPressed: () {
+                    _showDeleteDialog(context, post.id);
+                    },
+                    ),
+                    ],
+                    ),
+
+                    onTap: () {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
@@ -138,6 +163,7 @@ class VendorItemsScreen extends StatelessWidget {
             },
             child: const Text('Delete'),
           ),
+
         ],
       ),
     );

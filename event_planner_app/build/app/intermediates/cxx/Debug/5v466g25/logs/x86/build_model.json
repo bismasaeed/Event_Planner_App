@@ -10,7 +10,7 @@
   },
   "cxxBuildFolder": "C:\\Users\\ZA\\Desktop\\App development\\event_app\\android\\app\\.cxx\\Debug\\5v466g25\\x86",
   "soFolder": "C:\\Users\\ZA\\Desktop\\App development\\event_app\\build\\app\\intermediates\\cxx\\Debug\\5v466g25\\obj\\x86",
-  "soRepublishFolder": "C:\\Users\\ZA\\Desktop\\App development\\event_app\\build\\app\\intermediates\\cmake\\debug\\obj\\x86",
+  "soRepublishFolder": "C:\\Users\\ZA\\Desktop\\App development\\event_app\\build\\app\\intermediates\\cmake\\profile\\obj\\x86",
   "abiPlatformVersion": 23,
   "cmake": {
     "effectiveConfiguration": {
@@ -25,7 +25,7 @@
     ],
     "cFlagsList": [],
     "cppFlagsList": [],
-    "variantName": "debug",
+    "variantName": "profile",
     "isDebuggableEnabled": true,
     "validAbiList": [
       "armeabi-v7a",

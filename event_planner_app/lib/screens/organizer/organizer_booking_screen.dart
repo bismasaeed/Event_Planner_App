@@ -2,10 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:intl/intl.dart';
 
+import '../../services/booking_service.dart';
+
 class OrganizerBookingScreen extends StatelessWidget {
   final String organizerId;
+  final BookingService bookingService = BookingService();
 
-  const OrganizerBookingScreen({super.key, required this.organizerId});
+   OrganizerBookingScreen({super.key, required this.organizerId});
 
   @override
   Widget build(BuildContext context) {
@@ -15,10 +18,7 @@ class OrganizerBookingScreen extends StatelessWidget {
         title: const Text('My Booking Requests'),
       ),
       body: StreamBuilder<QuerySnapshot>(
-        stream: FirebaseFirestore.instance
-            .collection('bookings')
-            .where('organizerId', isEqualTo: organizerId)
-            .snapshots(),
+        stream: bookingService.getBookingsForOrganizer(organizerId), // use service
         builder: (context, snapshot) {
           if (snapshot.hasError) {
             return const Center(child: Text('Error loading bookings.'));
@@ -138,10 +138,8 @@ class OrganizerBookingScreen extends StatelessWidget {
 
                                   if (confirm == true) {
                                     try {
-                                      await FirebaseFirestore.instance
-                                          .collection('bookings')
-                                          .doc(booking.id)
-                                          .delete();
+                                      await bookingService.deleteBooking(booking.id);
+
 
                                       ScaffoldMessenger.of(context).showSnackBar(
                                         const SnackBar(

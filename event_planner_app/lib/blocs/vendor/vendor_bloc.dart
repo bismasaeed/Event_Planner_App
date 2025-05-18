@@ -11,6 +11,7 @@ class VendorBloc extends Bloc<VendorEvent, VendorState> {
     on<LoadVendorsByCategoryEvent>(_onLoadVendorsByCategory);
     on<LoadVendorItemsByUserEvent>(_onLoadVendorItemsByUser);
     on<AddVendorPostEvent>(_onAddVendorPost);
+    on<UpdateVendorPostEvent>(_onUpdateVendorPost); // ✅ Added Update event
   }
 
   // ✅ Load vendors by category
@@ -19,7 +20,7 @@ class VendorBloc extends Bloc<VendorEvent, VendorState> {
     try {
       emit(VendorLoading());
       final data = await vendorRepository.getVendorsByCategory(event.category);
-      final vendors = data.map((e) => VendorModel.fromMap(e, e['id'])).toList(); // ✅ Fix
+      final vendors = data.map((e) => VendorModel.fromMap(e, e['id'])).toList();
       emit(VendorLoaded(vendors));
     } catch (e) {
       emit(VendorError('Failed to load vendors: ${e.toString()}'));
@@ -32,7 +33,7 @@ class VendorBloc extends Bloc<VendorEvent, VendorState> {
     try {
       emit(VendorLoading());
       final data = await vendorRepository.getVendorItemsByUser(event.userId);
-      emit(VendorLoaded(data)); // ✅ Already returns List<VendorModel>
+      emit(VendorLoaded(data));
     } catch (e) {
       emit(VendorError('Failed to load vendor items: ${e.toString()}'));
     }
@@ -47,6 +48,18 @@ class VendorBloc extends Bloc<VendorEvent, VendorState> {
       emit(VendorSuccess('Vendor post added successfully.'));
     } catch (e) {
       emit(VendorError('Failed to add vendor post: ${e.toString()}'));
+    }
+  }
+
+  // ✅ Update vendor post
+  Future<void> _onUpdateVendorPost(
+      UpdateVendorPostEvent event, Emitter<VendorState> emit) async {
+    try {
+      emit(VendorLoading());
+      await vendorRepository.updateVendorPost(event.vendorId, event.updatedData);
+      emit(VendorSuccess('Vendor post updated successfully.'));
+    } catch (e) {
+      emit(VendorError('Failed to update vendor post: ${e.toString()}'));
     }
   }
 }

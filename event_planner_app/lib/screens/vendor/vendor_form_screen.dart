@@ -78,13 +78,6 @@ class _VendorFormScreenState extends State<VendorFormScreen> {
     );
 
     try {
-      // final docRef = await FirebaseFirestore.instance
-      //     .collection('vendors')
-      //     .add(vendorData.toMap());
-      //
-      // final updatedVendorData = vendorData.copyWith(id: docRef.id);
-      //
-      // context.read<VendorBloc>().add(AddVendorPostEvent(updatedVendorData));
 
       context.read<VendorBloc>().add(AddVendorPostEvent(vendorData));
 
@@ -223,11 +216,11 @@ class _VendorFormScreenState extends State<VendorFormScreen> {
                     const SizedBox(height: 10),
                     _buildDynamicFields(),
                     const SizedBox(height: 20),
-                    ElevatedButton.icon(
-                      onPressed: _pickImages,
-                      icon: const Icon(Icons.image),
-                      label: const Text('Select Images'),
-                    ),
+                    // ElevatedButton.icon(
+                    //   onPressed: _pickImages,
+                    //   icon: const Icon(Icons.image),
+                    //   label: const Text('Select Images'),
+                    // ),
                     const SizedBox(height: 10),
                     if (_images.isNotEmpty)
                       SizedBox(
